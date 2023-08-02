@@ -6,18 +6,18 @@
 
         </div>
         <div class="col-md-6 form" >
-            <label>choix de la specialite:</label>
+           <h1 class="title"> <label>choix de la specialite</label></h1>
             <h4> lycee de new bell</h4>
             <form action="" method="post">
-                @csrf <br>
+                @csrf
                 <LABEL>choisir votre specialite</LABEL><br>
-                <select class="select form-control">
+                <select class="select ">
                     <option>premier cycle</option>
                     <option>second cycle</option>
                     <option>formateur</option>
                 </select><br><br>
 
-                <center> <input type="reset" class="btn val1 form-control" value="annuler">
+                <center> <input type="reset" class="btn val form-control" value="annuler">
                     <input type="submit" class="btn val form-control" value="valider">
                 </center>
             </form>

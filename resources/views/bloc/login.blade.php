@@ -8,15 +8,15 @@
         </div>
         <div class="col-md-6 form" >
 
-            <form method="post">
+            <form method="post" class="title">
                 @csrf
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">login</label>
-                    <input type="text" class="form-control" name="email" aria-describedby="login">
+                    <label for="exampleInputEmail1" class="form-label" >login</label>
+                    <input type="text" class="form-control" name="email" aria-describedby="login" placeholder="Entrer votre login">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">mot de passe</label>
-                    <input type="password" class="form-control" name="motdepasse" >
+                    <label for="exampleInputPassword1" class="form-label" >mot de passe</label>
+                    <input type="password" class="form-control" name="motdepasse" placeholder="Entrer votre mot de passe" >
                 </div>
                 <input type="reset" class="btn" name="annuler" value="annuler">
                 <input type="submit" class="btn" name="envoyer" value="se connecter">
