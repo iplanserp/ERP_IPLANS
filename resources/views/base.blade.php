@@ -12,6 +12,7 @@
 </head>
 <body>
 <div class="container">
+    <img src="{{URL::asset('/image/logo.png')}}" alt="profile Pic" height="200" width="200">
     @yield('content')
 </div>
 <script src="{{ asset('js/bootstrap.min.js') }}"></script>

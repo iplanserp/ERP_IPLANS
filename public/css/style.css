@@ -2,10 +2,11 @@
     width: 50%;
 }
 .form{
-    margin-top: 107px;
+    margin-top: 90px;
 }
 .val{
-    margin-left: 100px;
+    margin-left: 10px;
+    width: 11% ;
 }
 .val1{
     margin-left: -280px;
@@ -13,4 +14,7 @@
 .btn{
     background-color: green;
     color: white;
+}
+.title{
+    margin-top: -112px;
 }

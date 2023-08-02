@@ -1,21 +1,22 @@
 @extends('base')
-@section('title','formulaire')
+@section('title','accueil')
 @section('content')
     <div class="row">
         <div class="col-md-4">
 
         </div>
         <div class="col-md-6 form" >
-            <h1>Connexion        IPLANS ERP</h1> <BR>
+            <p class="alert-heading">
+            <h1 class="title">Connexion          IPLANS ERP</h1> <BR>
             <h2>PACK EDUCATION MINESEC</h2><BR>
-
+            </p>
                 <LABEL>ETABLISSEMENT:</LABEL>
-                <select class="select form-control">
+                <select class="select ">
                     <option>nom du lycee</option>
                     <option>Lycee de new bell</option>
                 </select><br><br>
 
-            <a href="{{'/iplans/form'}}" ><button type="submit" class="btn val form-control" >suivant</button></a>
+           <center> <a href="{{'/iplans/form'}}" ><button class="btn val form-control" >suivant</button></a></center>
 
         </div>
         <div class="col-md-2"></div>

@@ -1,11 +1,13 @@
 @extends('base')
 @section('title','login')
 @section('content')
+
     <div class="row">
         <div class="col-md-4">
 
         </div>
         <div class="col-md-6 form" >
+
             <form method="post">
                 @csrf
                 <div class="mb-3">
