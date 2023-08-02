@@ -6,10 +6,6 @@ use Illuminate\Http\Request;
 
 class BlogController extends Controller
 {
-    public function show(string $slug,string $id)
-    {
-        return view('bloc.index');
-    }
     public function form()
     {
         return view('bloc.accueil');

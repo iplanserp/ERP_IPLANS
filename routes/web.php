@@ -17,20 +17,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-route::prefix('/blog')->name('blog.')->group(function (){
-    Route::get('/',function(Request $request){
-        return [
-            'link'=> \route('blog.show',['slug'=>'article','id'=>13]),
-        ];
-    })->name('index');
+route::prefix('/iplans')->name('iplans.')->group(function (){
 
-    Route::get('/{slug}-{id}',[\App\Http\Controllers\BlogController::class,'show'])->where([
-        'id'=>'[0-9]+',
-        'slug'=>'[a-z0-9\-]+'
-    ])->name('show');
-    Route::get('/form',[\App\Http\Controllers\BlogController::class,'form'])
-        ->name('form');
-    Route::post('/form/',[\App\Http\Controllers\BlogController::class,'store']);
+    Route::get('/erp',[\App\Http\Controllers\BlogController::class,'form'])->name('show');
+    //Route::post('/erp',[\App\Http\Controllers\BlogController::class,'store']);
+    Route::get('/form',[\App\Http\Controllers\BlogController::class,'store'])->name('form');
     Route::post('/form',[\App\Http\Controllers\BlogController::class,'store2']);
 });
 
