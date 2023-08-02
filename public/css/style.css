@@ -1,0 +1,16 @@
+.select{
+    width: 50%;
+}
+.form{
+    margin-top: 107px;
+}
+.val{
+    margin-left: 100px;
+}
+.val1{
+    margin-left: -280px;
+}
+.btn{
+    background-color: green;
+    color: white;
+}
